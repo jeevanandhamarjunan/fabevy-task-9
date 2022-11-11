@@ -186,25 +186,72 @@ color: #646161;
 /*----------------------------testimonials-section---------*/
 .testimonials-section{
   position:relative;
-  background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url(../images/testimonials-bg.jpg);
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/testimonials-bg.jpg);
   background-position:center;
   background-attachment:scroll;
-  padding: 140px 0;
+  padding: 186px 0;
 }
 .testimonals-sct{
     position: absolute;
-    top: 50%;
+    top: 64px;
     left: 50%;
+    width:100%;
     text-align: center;
     transform: translateX(-50%);
 }
 .carousel-indicators {
-  top:90px;
-  margin-bottom: 0;
+ bottom:-26px; 
+ margin-bottom: 0;
 }
-.carousel item{
+.carousel-item{
    text-align: center;
    color: #fff;
-   padding: 30px 0 50px;
    bottom: 0;
+}
+.carousel-item img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 7px #564c4c9c;
+}
+.carousel-item h5{
+  margin:0;
+}
+.carousel-item p i{
+ font-size:22px;
+}
+.carousel-item p i.icofont-quote-left:first-child {
+    position: relative;
+    bottom: 5px;
+}
+.carousel-item p i.icofont-quote-right:last-child {
+    position: relative;
+    top: 8px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 13px;
+    height: 10px;
+    border-radius: 50%;
+    color:#96c5ed36;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: #3c56b3;
+}
+/*--------about-section------------*/
+.team-section{
+ padding:40px 0;
+ color:#5c5959;
+}
+.team-head-cnt h3{
+  display:inline;
+  font-size:12px;
+}
+.team-section h1{
+  font-weight:800;
+}
+.team-section{
+   font-weight:600;
+}
+.rounded-pill {
+    padding: 4px 12px;
 }
