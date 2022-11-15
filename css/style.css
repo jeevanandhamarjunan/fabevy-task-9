@@ -2,7 +2,7 @@
  background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url(../images/background-image.jpg);
  background-position: center;
  background-attachment: fixed;
- min-height:400px;
+ padding:140px 0;
 }
 .banner-content{
   padding-top: 130px;
@@ -108,7 +108,7 @@ color: #646161;
 .about-logo-1{
     position: relative;
     border: solid 0px;
-    background-color: aliceblue;
+    background-color:#e7f1fd;
     text-align: center;
     padding:10px 0;
 }
@@ -154,9 +154,6 @@ color: #646161;
 .service-section{
    font-weight:600;
 }
-.rounded-pill {
-    padding: 4px 12px;
-}
 .service-logo{   
    border: solid 1px #96c5ed36;
    padding: 74px 20px; 
@@ -166,7 +163,7 @@ color: #646161;
 }
 .service-logo i{	
     color: #64a1f1;
-    background-color:aliceblue;
+    background-color:#e7f1fd;
     border: solid 1px #96c5ed36;
     padding: 16px 20px;
     border-radius: 6px;
@@ -235,12 +232,60 @@ color: #646161;
     color:#96c5ed36;
 }
 .carousel-dark .carousel-indicators [data-bs-target] {
-    background-color: #3c56b3;
+    background-color: #fff;
 }
-/*--------about-section------------*/
-.team-section{
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #2196f3 !important;
+}
+/*-------portfolio-section--------*/
+.portfolio-section{
  padding:40px 0;
  color:#5c5959;
+}
+.portfolio-head-cnt h3{
+  display:inline;
+  font-size:12px;
+}
+.portfolio-section h1{
+  font-weight:800;
+}
+.portfolio-section{
+   font-weight:600;
+}
+.portfolio-logo{
+  position:relative;
+}
+.portfolio-overlayer{
+    width: 80%;
+    position: absolute;
+    bottom: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity:0;
+    border:solid 0px #fff;
+    background-color:#fff;
+    padding:4px 12px;
+}
+.portfolio-logo:hover .portfolio-overlayer{
+   opacity:1;
+}
+.prt-lnk a{
+ color:#878282;
+ text-decoration:none;
+}
+.nav-link{
+ color:#000;
+}
+.nav :hover{
+ color:#0d6efd;
+}
+
+/*--------team-section------------*/
+.team-section{
+ padding:40px 0;
+ color:#282020;
+ background-color:#e7f1fd;;
 }
 .team-head-cnt h3{
   display:inline;
@@ -252,6 +297,249 @@ color: #646161;
 .team-section{
    font-weight:600;
 }
-.rounded-pill {
-    padding: 4px 12px;
+
+.team-overlayer {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 82%;
 }
+.team-overlayer a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0d6efd;
+    line-height:28px;
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin:0 2px;
+}
+.team-overlayer:hover{
+ opacity:1;
+ transform: translateY(8px);
+ transition:all ease 0.5s;
+}
+.team-overlayer a:hover{
+  background-color:#0d6efdb5;
+  color:#fff;
+}
+ 
+.card{
+ position:relative;
+ width:100%;
+ border-radius: 5px;
+ box-shadow: 0px 0px 12px #ccc;
+ border:0;
+}
+.card-body{
+ padding:16px 14px;
+}
+.card-body h3{
+ margin:0 0 3px 0;
+}
+.card-body p{
+ font-size:13px;
+ margin:0;
+}
+/*---------------piricing----section------*/
+.pricing-section{
+ padding:40px 0;
+ color:#282020;
+}
+.pricing-head-cnt h3{
+  display:inline;
+  font-size:12px;
+}
+.pricing-section h1{
+  font-weight:800;
+}
+.pricing-section{
+   font-weight:600;
+}
+
+.pricing-card{
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px #ccc;
+}
+.prc-card-head{
+ padding:20px 0;
+ border: 0;
+}
+.prc-card-footer{
+ padding:20px 0;
+ border: 0;
+} 
+.pricing-side-btn{
+    position: absolute;
+    top: 13px;
+    transform: rotate(45deg);
+    left: 165px;
+}
+/*---------------F.A.Q-section------*/
+.FAQ-section{
+ padding:40px 0;
+ color:#282020;
+}
+.FAQ-head-cnt h3{
+  display:inline;
+  font-size:12px;
+}
+.FAQ-section h1{
+  font-weight:800;
+}
+.FAQ-section{
+   font-weight:600;
+}
+.accordion-item {
+    border: 0;
+    border-bottom: solid 1px #e7ecf1;
+}
+.accordion {
+ --bs-accordion-color:#2f3234b8;
+ --bs-accordion-border-color: none;
+ --bs-accordion-btn-bg: none;
+ --bs-accordion-btn-focus-border-color: none;
+ --bs-accordion-active-bg:none;
+ --bs-accordion-btn-focus-box-shadow:none;
+}
+.accordion-button:not(.collapsed) {
+  font-size:19px;
+}
+.accordion-button{
+ font-size:18px;
+}
+.accordion-body {
+ padding-top:0;
+}
+.accordion-button:hover{
+ color:#4545ffd1;
+}
+.accordion-button::after {
+    position: absolute;
+    left: -5px;
+    top: 13px;
+    opacity: 0.4;
+}
+/*------------contact-section-------*/
+.contact-section{
+ padding:40px 0;
+ color:#282020;
+}
+.contact-head-cnt h3{
+  display:inline;
+  font-size:12px;
+}
+.contact-section h1{
+  font-weight:800;
+}
+.contact-section{
+   font-weight:600;
+}
+.contact-content{
+ color:#282020cc;
+}
+.contact-address{
+ padding:27px 0;
+ border: 0 !important;
+ box-shadow: 0 0 19px #cccccc47;
+}
+.contact-address p{
+ margin:0;
+}
+.contact-address i{
+border: 2px dotted #b3d1fa;
+}
+.contact-info-form{
+ padding:27px 24px;
+ border: 0 !important;
+ box-shadow: 0 0 19px #cccccc47;
+}
+textarea.form-control {
+  min-height:130px;
+}
+/*---------------*/
+.subscribe-section{
+    padding: 50px 0;
+    background-color: #f1f6fe;
+}
+.input-group{
+    width: 50%;
+    left: 27%;
+    top: 17px;
+}
+.input-group btn{
+   left:30%;
+}
+/*----------bottom-section-----*/
+.bottom-section{
+  padding:40px 0;
+  color: #282020;
+}
+.bottom-content-2 h4{
+  font-size:17px;
+}
+.bottom-content-3 h4{
+  font-size:17px;
+}
+.bottom-content-3 p{
+  font-size:15px;
+}
+.bottom-content-3 a{
+  text-decoration:none;
+}
+.bottom-content-2 a{
+   text-decoration:none;
+   display:block;
+   font-size:14px;
+   color:#747272;
+}
+.btm-logo a{
+    font-size: 16px;
+    color: #fff;
+    background-color: #0d6efd;
+    line-height:28px;
+    border-radius: 3px;
+    padding: 2px 8px;
+    margin:0 4px;
+}
+.btm-logo a:hover{
+  background-color:#0d6efdb5;
+  color:#fff;
+}
+
+.bottom-content-2 a:hover{
+ color: #106eea;
+}
+/*-----------------footer-section-------------------*/
+.footer-section{
+    padding: 20px 0;
+    background-color: #f1f6fe;
+}
+.footer p{
+  font-size:13px;
+  color:#747272;
+}
+.footer span{
+color:#0d6efd;
+} 
+.footer span:hover{
+  color:#0d6efdd9;
+}
+.footer-section .up-arrow{
+ position:fixed;
+ right:20px; 
+ bottom:10px;
+ z-index:670;
+ font-size:25px;
+ color:#fff;
+ background-color:#0d6efd;
+ padding:4px;
+
+}
+
+
