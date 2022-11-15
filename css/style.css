@@ -260,20 +260,30 @@ color: #646161;
     width: 80%;
     position: absolute;
     bottom: 27px;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity:0;
-    border:solid 0px #fff;
-    background-color:#fff;
-    padding:4px 12px;
+    left: 33px;
+    right: 33px;
+    opacity: 0;
+    border: solid 0px #fff;
+    background-color: #fff;
+    padding: 6px 12px;
 }
 .portfolio-logo:hover .portfolio-overlayer{
    opacity:1;
+   transition:all ease 0.7s;
+   transform: translatey(-8px);
+}
+.prt-lnk i:hover{
+ color:#0d6efd;
 }
 .prt-lnk a{
  color:#878282;
  text-decoration:none;
 }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+ color:#0d6efd;
+ background-color:unset;
+}
+   
 .nav-link{
  color:#000;
 }
