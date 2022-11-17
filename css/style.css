@@ -1,3 +1,19 @@
+.nav-link {
+ padding-bottom:10px;
+ border-bottom: solid 2px #fff;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding:0 0 5px 0;
+  margin:0 10px;
+} 
+.navbar-nav .nav-link.active{
+  color:#2196f3;
+    border-bottom: solid 2px #2196f3;
+}
+.nav-link:hover {
+    color: #2196f3;
+    border-bottom: solid 2px #2196f3;
+}
 .banner-section{
  background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url(../images/background-image.jpg);
  background-position: center;
@@ -72,6 +88,7 @@ color: #6e6b6b;
 .about-section{
  padding:40px 0;
  color:#5c5959;
+ background-color:#e7f1fd;
 }
 .abt-head-cnt h3{
   display:inline;
@@ -83,6 +100,9 @@ color: #6e6b6b;
 .about-section{
    font-weight:600;
 }
+.abt-content p{
+ margin:0;
+} 
 .rounded-pill {
     padding: 4px 12px;
 }
@@ -504,9 +524,12 @@ textarea.form-control {
 }
 .bottom-content-2 a{
    text-decoration:none;
-   display:block;
+   display:inline-block;
    font-size:14px;
    color:#747272;
+}
+.form-control:focus {
+  box-shadow:unset;
 }
 .btm-logo a{
     font-size: 16px;
@@ -521,7 +544,12 @@ textarea.form-control {
   background-color:#0d6efdb5;
   color:#fff;
 }
-
+.bottom-content-2 ul{
+padding-left:0;
+}
+.bottom-content-2 ul li{
+list-style:none;
+}
 .bottom-content-2 a:hover{
  color: #106eea;
 }

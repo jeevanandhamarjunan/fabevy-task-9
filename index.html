@@ -15,48 +15,61 @@
 </head>
 <body>
 <header class="head-section">  
-  <div class="container">
-  <nav class="navbar navbar-expand-lg bg-light">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ <div class="container">
+ <nav class="navbar navbar-expand-lg ">
+   <div class="container-fluid">
+    <a class="navbar-brand fs-3 fw-bolder" href="#">BizLand<span class="text-primary">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-   <div class="row alig-items-center"> 
-      <div class="col-lg-3">
-          <div>
-           <a class="navbar-brand fs-3 fw-bolder" href="#">BizLand<span class="text-primary">.</span></a>
-          </div>
-       </div>
-      <div class="col-lg-9">
-      <div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-         <li class="nav-item">
-           <a class="nav-link active" aria-current="page" href="#">Home</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#">Link</a>
-         </li>
-         <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <div class="text-end">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item ms-2 me-2">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item ms-2 me-2">
+          <a class="nav-link " href="#">About</a>
+        </li>
+        <li class="nav-item ms-2 me-2">
+          <a class="nav-link" href="#">Service</a>
+        </li>
+        <li class="nav-item ms-2 me-2">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item ms-2 me-2">
+          <a class="nav-link" href="#">Team</a>
+        </li>
+        <li class="nav-item  ms-2 me-2 dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
-           </a>
-           <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#">Action</a></li>
-             <li><a class="dropdown-item" href="#">Another action</a></li>
-             <li><hr class="dropdown-divider"></li>
-             <li><a class="dropdown-item" href="#">Something else here</a></li>
-           </ul>
-          </li>
-          <li class="nav-item">
-           <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-       </div>
-      </div>
-      </div>
-
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Drop Down</a></li>
+            <li><a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Deep Drop Down</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Drop Down</a></li>
+                    <li><a class="dropdown-item" href="#">Deep Drop Down</a></li>
+                    <li><a class="dropdown-item" href="#">Drop Down</a></li>
+                    <li><a class="dropdown-item" href="#">Drop Down</a></li>
+                    <li><a class="dropdown-item" href="#">Drop Down</a></li>
+                 </ul>
+             </li>
+            <li><a class="dropdown-item" href="#">Drop Down</a></li>
+            <li><a class="dropdown-item" href="#">Drop Down</a></li>
+            <li><a class="dropdown-item" href="#">Drop Down</a></li>
+          </ul>
+        </li>
+        <li class="nav-item ms-2 me-2">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+   </div>
+   </div>
+ </nav>
   </div>
-</nav>
-</header>
+</section>
 <!---------------banner-section------------>
 <section class="banner-section">
  <div class="container">
@@ -74,6 +87,7 @@
  </div>
 </section>
 <!------------banner-logo----------->
+
  <section class="banner-logo-section">
  <div class="container">
   <div class="row">
@@ -108,11 +122,59 @@
   </div>
  </div>
 </section>
+<!----------------------------about-section------------------>
+<section class="about-section">
+ <div class="container">
+  <div class="abt-head-cnt text-center"> 
+   <h3 class="text-primary fw-bolder rounded-pill bg-light">About</h3>
+   <h1 class="fs-3 pt-3">Find Out More <span class="text-primary">About Us</span></h1>
+   <p class="pt-3">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est<br> adipisci expedita at voluptas atque vitae autem.</p>
+  </div>
+  <div class="row mt-4">
+   <div class="col-lg-6">
+    <div class="abt-cnt-image">
+     <img class="img-fluid" src="images/about.jpg" alt="not-found"> 
+   </div>
+   </div>
+   <div class="col-lg-6">
+     <div class="abt-content">
+       <h4 class="fw-semibold">Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
+        <p class="fst-italic fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+      <div class="abt-main d-flex align-items-center">  
+        <div class="border border-0 rounded-circle bg-white d-inline p-3">
+          <i class="icofont-home text-primary fs-3"></i>
+        </div>
+        <div class="ps-3">
+          <h5 class="pt-4 fw-semibold">Ullamco laboris nisi ut aliquip consequat</h5>
+          <p class="fw-light text-secondary">Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+        </div>
+      </div>
+      <div class="abt-main d-flex align-items-center">  
+        <div class="border border-0 rounded-circle bg-white d-inline p-3">
+          <i class="icofont-ui-image text-primary fs-3"></i>
+        </div>
+        <div class="ps-3">
+          <h5 class="pt-4 fw-semibold">Magnam soluta odio exercitationem reprehenderi</h5>
+          <p class="fw-light text-secondary">Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+        </div>
+      </div>
+
+
+
+        <p class="pt-5 fw-light">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+     </div>
+   </div> 
+  </div>
+ </div>
+</section>
+
 <!----------------------------abt-progres-section------------------>
 <section class="abt-progress-section">
  <div class="container">
   <div class="row">
     <div class="col-lg-6">
+      <div class="abt-progress-content"> 
       <div class="abt-progress d-flex justify-content-between">
         <h3 class="fw-semibold">HTML</h3>
         <h3 class="fw-semibold">100%</h3>
@@ -120,6 +182,8 @@
       <div class="progress mb-4">
        <div class="progress-bar w-100" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
+      </div>
+      <div class="abt-progress-content">
       <div class="abt-progress d-flex justify-content-between">
         <h3 class="fw-semibold">CSS</h3>
         <h3 class="fw-semibold">90%</h3>
@@ -127,6 +191,8 @@
       <div class="progress mb-4">
        <div class="progress-bar" style="width: 90%" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
+      </div>
+      <div class="abt-progress-content">
       <div class="abt-progress d-flex justify-content-between">
         <h3 class="fw-semibold">JAVASCRIPT</h3>
         <h3 class="fw-semibold">75%</h3>
@@ -134,8 +200,10 @@
       <div class="progress mb-4">
            <div class="progress-bar w-75" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
+      </div>
     </div>
     <div class="col-lg-6">
+     <div class="abt-progress-content">  
       <div class="abt-progress d-flex justify-content-between">
         <h3 class="fw-semibold">PHP</h3>
         <h3 class="fw-semibold">80%</h3>
@@ -143,6 +211,8 @@
       <div class="progress mb-4">
        <div class="progress-bar" style="width: 80%" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
+     </div>
+     <div class="abt-progress-content">
       <div class="abt-progress d-flex justify-content-between">
         <h3 class="fw-semibold">WORDPRESS/CMS</h3>
         <h3 class="fw-semibold">90%</h3>
@@ -150,6 +220,8 @@
       <div class="progress mb-4">
        <div class="progress-bar" style="width:90%" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
+     </div>
+     <div class="abt-progress-content">
       <div class="abt-progress d-flex justify-content-between">
         <h3 class="fw-semibold">PHOTOSHOP</h3>
         <h3 class="fw-semibold">55%</h3>
@@ -157,6 +229,7 @@
       <div class="progress mb-4">
        <div class="progress-bar" style="width:55%" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
+     </div>
     </div>
   </div>
  </div>
@@ -233,16 +306,6 @@
     </div>
   </div>
  </div>
- </div>
-</section>
-<!----------------------------about-section------------------>
-<section class="about-section">
- <div class="container">
-  <div class="abt-head-cnt text-center"> 
-   <h3 class="text-primary fw-bolder rounded-pill bg-light">About</h3>
-   <h1 class="fs-3 pt-3">Find Out More <span class="text-primary">About Us</span></h1>
-   <p class="pt-3">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est<br> adipisci expedita at voluptas atque vitae autem.</p>
-  </div>
  </div>
 </section>
 <!----------------------------service-section------------------>
@@ -905,7 +968,7 @@
         </div>
       </div>
           <div class="mt-4">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.791756588633!2d78.046263614289!3d11.05423385702828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2c5940c36779%3A0x638aea1962e8ae96!2sM.Kumarasamy%20College%20of%20Engineering%2C%20Autonomous%20(Accredited%20with%20A%20grade%20by%20NAAC)!5e0!3m2!1sen!2sin!4v1668404131622!5m2!1sen!2sin" width="540" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2895789605!2d-74.26056294416968!3d40.69766840083758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1668584295453!5m2!1sen!2sin" width="540" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          </div>
     </div>
     <div class="col-lg-6">
@@ -983,21 +1046,25 @@
    <div class="col-lg-3"> 
     <div class="bottom-content-2">
           <h4 class="fw-semibold">Useful Links</h4>
-           <a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Home</a>
-           <a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>About Us</a>
-           <a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Service</a>
-           <a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary text-primary"></i>Terms of Service</a>
-           <a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Privacy Policy</a>
+          <ul>
+           <li><a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Home</a></li>
+           <li><a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>About Us</a></li>
+           <li><a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Service</a></li>
+           <li><a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary text-primary"></i>Terms of Service</a></li>
+           <li><a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Privacy Policy</a></li>
+          </ul>
        </div>
     </div>
    <div class="col-lg-3"> 
     <div class="bottom-content-2">
           <h4 class="fw-semibold">Our Service</h4>
-           <a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Web Design</a>
-           <a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Web Development</a>
-           <a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Product Management</a>
-           <a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Marketing</a>
-           <a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Graphic Design</a>
+           <ul>
+           <li><a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Web Design</a></li>
+           <li><a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Web Development</a></li>
+           <li><a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Product Management</a></li>
+           <li><a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Marketing</a></li>
+           <li><a href="#" class="pt-2 pb-2"><i class="icofont-curved-right text-primary"></i>Graphic Design</a></li>
+          </ul>
        </div>
     </div>
    <div class="col-lg-3"> 
