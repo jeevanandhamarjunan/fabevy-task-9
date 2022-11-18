@@ -1,4 +1,4 @@
-.nav-link {
+.nav-link .head-nav-link {
  padding-bottom:10px;
  border-bottom: solid 2px #fff;
 }
@@ -10,9 +10,13 @@
   color:#2196f3;
     border-bottom: solid 2px #2196f3;
 }
-.nav-link:hover {
+.head-nav-link:hover {
     color: #2196f3;
     border-bottom: solid 2px #2196f3;
+}
+.dropdown-item:hover{
+ color:#2196f3;
+ background:unset;
 }
 .banner-section{
  background-image:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url(../images/background-image.jpg);
@@ -152,7 +156,6 @@ color: #646161;
  padding:0 30px;
 }
 .client-logo img{
-  width:80%;
 }
 .client-logo:hover{
   transform:scale(1.2);

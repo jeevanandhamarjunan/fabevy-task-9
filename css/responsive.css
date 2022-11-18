@@ -1,0 +1,90 @@
+@media (min-width:0){
+
+.banner-logo{
+   margin-bottom:15px;
+   height:unset;
+}
+.about-logo-1{
+ margin:25px 0;
+}
+.client-logo{
+ padding:0;
+ margin:10px 0;
+}
+.card{
+ margin:20px 0;
+}
+.pricing-side-btn {
+ left:74%;
+}
+.contact-address {
+ margin:10px 0;
+}
+.bottom-content-1,.bottom-content-2,.bottom-content-3{
+  margin-bottom:24px;
+}
+.input-group{
+ width:100%;
+ left:0;
+}
+.footer{
+ text-align:center;
+}
+.footer p{
+ margin:0;
+}
+@media (min-width: 768px) { 
+.banner-logo {
+    margin:15px 0;
+    font-size:15px;
+}
+.abt-content{
+ margin-top:20px;
+}
+.abt-main{
+ margin:10px 0;
+}
+.abt-h{
+ padding:0;
+}
+.client-logo img{
+ padding:0 40px;
+}
+.service-logo{
+  margin:10px 0;
+}
+.pricing-side-btn {
+ left:71%;
+}
+}
+@media (min-width: 992px) {
+
+.banner-logo h3{
+ font-size:16px !important;
+}
+.pricing-side-btn {
+    left: 165px;
+}
+.input-group{
+    width: 50%;
+    left: 27%;
+    top: 17px;
+}
+.client-logo img {
+    padding: 0 20px;
+}
+}
+@media (min-width: 1200px) { 
+
+.pricing-side-btn {
+    left: 165px;
+}
+.input-group{
+    width: 50%;
+    left: 27%;
+    top: 17px;
+}
+.client-logo img {
+    padding: 0 20px;
+}
+}
