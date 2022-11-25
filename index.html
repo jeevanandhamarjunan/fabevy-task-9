@@ -13,32 +13,36 @@
  <link rel="stylesheet" href="css/style.css">
  <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+
 <header class="head-section">  
  <div class="container">
  <nav class="navbar navbar-expand-lg ">
-   <div class="container-fluid">
+   <div class="container">
     <a class="navbar-brand fs-3 fw-bolder" href="#">BizLand<span class="text-primary">.</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+   <!-- <button class="navbar-toggler" id="mb-btn">
+      <span>
+      <i class="icofont-navigation-menu active" id="bar-icon"></i>
+      <i class="icofont-close" id="close-icon"></i>   
+      </span> 
+    </button> -->
     <div class="text-end">
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="navbar-collapse" id="mb-menu">
       <ul class="navbar-nav">
         <li class="nav-item ms-2 me-2">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#scrollspy1">Home</a>
         </li>
         <li class="nav-item ms-2 me-2">
-          <a class="nav-link head-nav-link" href="#">About</a>
+          <a class="nav-link head-nav-link" href="#scrollspy2">About</a>
         </li>
         <li class="nav-item ms-2 me-2">
-          <a class="nav-link head-nav-link" href="#">Service</a>
+          <a class="nav-link head-nav-link" href="#scrollspy3">Service</a>
         </li>
         <li class="nav-item ms-2 me-2">
-          <a class="nav-link head-nav-link" href="#">Portfolio</a>
+          <a class="nav-link head-nav-link" href="#scrollspy4">Portfolio</a>
         </li>
         <li class="nav-item ms-2 me-2">
-          <a class="nav-link head-nav-link" href="#">Team</a>
+          <a class="nav-link head-nav-link" href="#scrollspy5">Team</a>
         </li>
         <li class="nav-item  ms-2 me-2 dropdown">
           <a class="nav-link  head-nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,22 +50,23 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Drop Down</a></li>
-            <li><a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Deep Drop Down</a>
-                <ul class="dropdown-menu">
+            <li class="deep-drop-down"><a class="dropdown-item">Deep Drop Down</a>
+                <ul class="dropdown-menu-deep">
                     <li><a class="dropdown-item" href="#">Drop Down</a></li>
-                    <li><a class="dropdown-item" href="#">Deep Drop Down</a></li>
+                    <li><a class="dropdown-item" href="#">Deep Drop Down</a></li>                    
                     <li><a class="dropdown-item" href="#">Drop Down</a></li>
                     <li><a class="dropdown-item" href="#">Drop Down</a></li>
                     <li><a class="dropdown-item" href="#">Drop Down</a></li>
                  </ul>
-             </li>
-            <li><a class="dropdown-item" href="#">Drop Down</a></li>
-            <li><a class="dropdown-item" href="#">Drop Down</a></li>
-            <li><a class="dropdown-item" href="#">Drop Down</a></li>
+                  </li>   
+                    <li><a class="dropdown-item" href="#">Drop Down</a></li>
+                    <li><a class="dropdown-item" href="#">Drop Down</a></li>
+                    <li><a class="dropdown-item" href="#">Drop Down</a></li>
+            
           </ul>
         </li>
         <li class="nav-item ms-2 me-2">
-          <a class="nav-link head-nav-link" href="#">Contact</a>
+          <a class="nav-link head-nav-link" href="#scrollspy6">Contact</a>
         </li>
       </ul>
     </div>
@@ -71,8 +76,9 @@
   </div>
 </header>
 <!---------------banner-section------------>
-<section class="banner-section">
+<section class="banner-section" id="scrollspy1">
  <div class="container">
+  <div class="col-sm-12">
   <div class="banner-content">
    <h1>Welcome to <span class="text-primary">BizLand</span></h1>
    <p class="fs-4">We are team of talented designers making websites with Bootstrap</p>
@@ -82,6 +88,7 @@
     <i class="icofont-play-alt-2 text-primary"></i>
     <a href="#">Watch Video</a> 
    <span>
+  </div>
   </div>
   </div>
  </div>
@@ -123,10 +130,10 @@
  </div>
 </section>
 <!----------------------------about-section------------------>
-<section class="about-section">
+<section class="about-section" id="scrollspy2">
  <div class="container">
   <div class="abt-head-cnt text-center"> 
-   <h3 class="text-primary fw-bolder rounded-pill bg-light">About</h3>
+   <h3 class="text-primary fw-bolder rounded-pill bg-lgt">About</h3>
    <h1 class="fs-3 pt-3">Find Out More <span class="text-primary">About Us</span></h1>
    <p class="pt-3">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est<br> adipisci expedita at voluptas atque vitae autem.</p>
   </div>
@@ -240,28 +247,28 @@
 <section class="about-logo">
  <div class="container">
  <div class="row">
-  <div class="col-md-6 col-lg-3">
+  <div class="col-sm-12 col-md-6 col-lg-3">
    <div class="about-logo-1">
     <i class="icofont-simple-smile bg-primary"></i>
     <h2 class="fs-1 pt-4">232</h2>
     <p class="text-secondary ">Happy Clients</p>  
    </div>
   </div>
-  <div class="col-md-6 col-lg-3">
+  <div class="col-sm-12 col-md-6 col-lg-3">
    <div class="about-logo-1">
     <i class="icofont-file-document bg-primary"></i>
     <h2 class="fs-1 pt-4">521</h2>
     <p class="text-secondary ">Projects</p>  
    </div>  
   </div>
-  <div class="col-md-6 col-lg-3">
+  <div class="col-sm-12 col-md-6 col-lg-3">
    <div class="about-logo-1">
     <i class="icofont-ui-head-phone bg-primary"></i>
     <h2 class="fs-1 pt-4">1463</h2>
     <p class="text-secondary ">Hours Of Support</p>  
    </div>  
   </div>
-  <div class="col-md-6 col-lg-3">
+  <div class="col-sm-12 col-md-6 col-lg-3">
    <div class="about-logo-1">
     <i class="icofont-people bg-primary"></i>
     <h2 class="fs-1 pt-4">15</h2>
@@ -309,51 +316,51 @@
  </div>
 </section>
 <!----------------------------service-section------------------>
-<section class="service-section">
+<section class="service-section" id="scrollspy3">
  <div class="container">
   <div class="service-head-cnt text-center mt-3"> 
-   <h3 class="text-primary fw-semibold rounded-pill bg-light">SERVICE</h3>
+   <h3 class="text-primary fw-semibold rounded-pill bg-lgt opacity-75">SERVICE</h3>
    <h1 class="fs-3 pt-3">Check our <span class="text-primary">Services</span></h1>
    <p class="pt-3 ">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est<br> adipisci expedita at voluptas atque vitae autem.</p>
   </div>  
    <div class="row">
      <div class="col-md-6 col-lg-4">
-      <div class="service-logo text-center mt-3">
+      <div class="service-logo text-center mt-4">
         <i class="icofont-volleyball fs-4"></i>
         <h3 class="fs-4 fw-semibold pt-5">Lorem Ipsum</h3>
         <p class="fs-6 fw-light pt-2">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
       </div> 
      </div>
      <div class="col-md-6 col-lg-4">
-      <div class="service-logo text-center mt-3">
+      <div class="service-logo text-center mt-4">
         <i class="icofont-ui-file fs-4"></i>
         <h3 class="fs-4 fw-semibold pt-5">Sed ut perspiciatis</h3>
         <p class="fs-6 fw-light pt-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
       </div> 
      </div>
      <div class="col-md-6 col-lg-4">
-      <div class="service-logo text-center mt-3">
+      <div class="service-logo text-center mt-4">
         <i class="icofont-speed-meter fs-4"></i>
         <h3 class="fs-4 fw-semibold pt-5">Magni Dolores</h3>
         <p class="fs-6 fw-light pt-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
       </div> 
      </div> 
      <div class="col-md-6 col-lg-4">
-      <div class="service-logo text-center mt-3">
+      <div class="service-logo text-center mt-4">
         <i class="icofont-world fs-4"></i>
         <h3 class="fs-4 fw-semibold pt-5">Nemo Enim</h3>
         <p class="fs-6 fw-light pt-2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
       </div> 
      </div> 
      <div class="col-md-6 col-lg-4">
-      <div class="service-logo text-center mt-3">
+      <div class="service-logo text-center mt-4">
         <i class="icofont-computer fs-4"></i>
         <h3 class="fs-4 fw-semibold pt-5">Dele cardo</h3>
         <p class="fs-6 fw-light pt-2">Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
       </div> 
      </div> 
      <div class="col-md-6 col-lg-4">
-      <div class="service-logo text-center mt-3">
+      <div class="service-logo text-center mt-4">
         <i class="icofont-food-cart fs-4"></i>
         <h3 class="fs-4 fw-semibold pt-5">Divera don</h3>
         <p class="fs-6 fw-light pt-2">Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
@@ -430,10 +437,10 @@
        </div>
        </div> 
 -->
-<section class="portfolio-section">
+<section class="portfolio-section" id="scrollspy4">
  <div class="container">
   <div class="portfolio-head-cnt text-center"> 
-   <h3 class="text-primary fw-semibold rounded-pill bg-light">PORTFOLIO</h3>
+   <h3 class="text-primary fw-semibold rounded-pill bg-lgt opacity-75">PORTFOLIO</h3>
    <h1 class="fs-3 pt-2">Check our <span class="text-primary">Portfolio</span></h1>
    <p class="fw-semibold pt-2 pb-3 opacity-75">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est<br> adipisci expedita at voluptas atque vitae autem.</p>
   </div>
@@ -467,6 +474,19 @@
           <p class="text-secondary fw-light m-0">App</p>
        </div>
        </div>
+        <!------------------portfolio-md-------------->
+      <div class="portfolio-logo d-lg-none d-md-block">         
+         <img class="w-100 mt-4 d-block" src="images/portfolio-4.jpg" alt="not-found">
+        <div class="portfolio-overlayer">
+          <h6 class="fw-semibold m-0">Card 2</h6>
+         <div class="prt-lnk text-end">
+          <a href="#"><i class="icofont-plus fs-6 me-1 ms-1"></i></a>
+          <a href="#"><i class="icofont-link fs-6"></i></a>
+         </div>
+          <p class="text-secondary fw-light m-0">Card</p>
+       </div>
+       </div> 
+
       <div class="portfolio-logo d-block">         
          <img class="w-100 mt-4 d-block" src="images/portfolio-6.jpg" alt="not-found">
         <div class="portfolio-overlayer">
@@ -478,7 +498,21 @@
           <p class="text-secondary fw-light m-0">App</p>
        </div>
        </div>
+        <!------------------portfolio-md---------------->
+      <div class="portfolio-logo  d-lg-none d-md-block">         
+         <img class="w-100 mt-4 d-block" src="images/portfolio-8.jpg" alt="not-found">
+        <div class="portfolio-overlayer">
+          <h6 class="fw-semibold m-0">Card 3</h6>
+         <div class="prt-lnk text-end">
+          <a href="#"><i class="icofont-plus fs-6 me-1 ms-1"></i></a>
+          <a href="#"><i class="icofont-link fs-6"></i></a>
+         </div>
+          <p class="text-secondary fw-light m-0">Card</p>
+       </div>
+       </div> 
+
      </div>  
+
      <div class="col-md-6 col-lg-4">
       <div class="portfolio-logo d-block">         
          <img class="w-100 mt-4 d-block" src="images/portfolio-2.jpg" alt="not-found">
@@ -491,6 +525,20 @@
           <p class="text-secondary fw-light m-0">App</p>
        </div>
        </div>
+
+        <!------------------portfolio-md-------------->
+      <div class="portfolio-logo  d-lg-none d-md-block">         
+         <img class="w-100 mt-4 d-block" src="images/portfolio-3.jpg" alt="not-found">
+        <div class="portfolio-overlayer">
+          <h6 class="fw-semibold m-0">App 2</h6>
+         <div class="prt-lnk text-end">
+          <a href="#"><i class="icofont-plus fs-6 me-1 ms-1"></i></a>
+          <a href="#"><i class="icofont-link fs-6"></i></a>
+         </div>
+          <p class="text-secondary fw-light m-0">App</p>
+       </div>
+       </div>
+
       <div class="portfolio-logo d-block">         
          <img class="w-100 mt-4 d-block" src="images/portfolio-5.jpg" alt="not-found">
         <div class="portfolio-overlayer">
@@ -502,6 +550,20 @@
           <p class="text-secondary fw-light m-0">Web</p>
        </div>
        </div>
+
+        <!------------------portfolio-md-------------->
+      <div class="portfolio-logo d-lg-none d-md-block">         
+         <img class="w-100 mt-4 d-block" src="images/portfolio-7.jpg" alt="not-found">
+        <div class="portfolio-overlayer">
+          <h6 class="fw-semibold m-0">Card 1</h6>
+         <div class="prt-lnk text-end">
+          <a href="#"><i class="icofont-plus fs-6 me-1 ms-1"></i></a>
+          <a href="#"><i class="icofont-link fs-6"></i></a>
+         </div>
+          <p class="text-secondary fw-light m-0">Card</p>
+       </div>
+       </div>
+
       <div class="portfolio-logo d-block">         
          <img class="w-100 mt-4 d-block" src="images/portfolio-9.jpg" alt="not-found">
         <div class="portfolio-overlayer">
@@ -514,7 +576,7 @@
        </div>
        </div>
      </div>  
-     <div class="col-md-6 col-lg-4">
+     <div class="col-md-6 col-lg-4 d-md-none d-lg-block">
       <div class="portfolio-logo d-block">         
          <img class="w-100 mt-4 d-block" src="images/portfolio-3.jpg" alt="not-found">
         <div class="portfolio-overlayer">
@@ -577,7 +639,7 @@
        </div>
        </div>
       </div>
-      <div class="col-md-6 col-lg-4">
+      <div class="col-md-6 col-lg-4 d-lg-block d-md-none">
        <div class="portfolio-logo d-block">         
          <img class="w-100 mt-4 d-block" src="images/portfolio-3.jpg" alt="not-found">
         <div class="portfolio-overlayer">
@@ -591,10 +653,23 @@
        </div>
       </div>
       <div class="col-md-6 col-lg-4">
+    <!------------portfolio-md--------->
+       <div class="portfolio-logo d-lg-none d-md-block">         
+         <img class="w-100 mt-4 d-block" src="images/portfolio-3.jpg" alt="not-found">
+        <div class="portfolio-overlayer">
+          <h6 class="fw-semibold m-0">App 2</h6>
+         <div class="prt-lnk text-end">
+          <a href="#"><i class="icofont-plus fs-6 me-1 ms-1"></i></a>
+          <a href="#"><i class="icofont-link fs-6"></i></a>
+         </div>
+          <p class="text-secondary fw-light m-0">App</p>
+       </div>
+       </div>
+
        <div class="portfolio-logo d-block">         
          <img class="w-100 mt-4 d-block" src="images/portfolio-6.jpg" alt="not-found">
         <div class="portfolio-overlayer">
-          <h6 class="fw-semibold m-0">App 1</h6>
+          <h6 class="fw-semibold m-0">App 3</h6>
          <div class="prt-lnk text-end">
           <a href="#"><i class="icofont-plus fs-6 me-1 ms-1"></i></a>
           <a href="#"><i class="icofont-link fs-6"></i></a>
@@ -632,8 +707,21 @@
           <p class="text-secondary fw-light m-0">Card</p>
        </div>
        </div>
+    <!-----------------portfolio----md----------->
+       <div class="portfolio-logo d-md-block d-lg-none">         
+         <img class="w-100 mt-4 d-block" src="images/portfolio-8.jpg" alt="not-found">
+        <div class="portfolio-overlayer">
+          <h6 class="fw-semibold m-0">Card 3</h6>
+         <div class="prt-lnk text-end">
+          <a href="#"><i class="icofont-plus fs-6 me-1 ms-1"></i></a>
+          <a href="#"><i class="icofont-link fs-6"></i></a>
+         </div>
+          <p class="text-secondary fw-light m-0">Card</p>
        </div>
-       <div class="col-md-6 col-lg-4">
+       </div>
+
+       </div>
+       <div class="col-md-6 col-lg-4 d-md-none d-lg-block">
        <div class="portfolio-logo d-block">         
          <img class="w-100 mt-4 d-block" src="images/portfolio-8.jpg" alt="not-found">
         <div class="portfolio-overlayer">
@@ -662,6 +750,19 @@
           <p class="text-secondary fw-light m-0">Web</p>
        </div>
        </div>
+    <!---------------portfolio-md----------->
+       <div class="portfolio-logo d-lg-none d-md-block">         
+         <img class="w-100 mt-4 d-block" src="images/portfolio-9.jpg" alt="not-found">
+        <div class="portfolio-overlayer">
+          <h6 class="fw-semibold m-0">Web 3</h6>
+         <div class="prt-lnk text-end">
+          <a href="#"><i class="icofont-plus fs-6 me-1 ms-1"></i></a>
+          <a href="#"><i class="icofont-link fs-6"></i></a>
+         </div>
+          <p class="text-secondary fw-light m-0">Web</p>
+       </div>
+       </div>
+
        </div>      
      <div class="col-md-6 col-lg-4">
        <div class="portfolio-logo d-block">         
@@ -676,7 +777,7 @@
        </div>
        </div>
        </div>
-     <div class="col-md-6 col-lg-4"> 
+     <div class="col-md-6 col-lg-4 d-md-none d-lg-block"> 
        <div class="portfolio-logo d-block">         
          <img class="w-100 mt-4 d-block" src="images/portfolio-9.jpg" alt="not-found">
         <div class="portfolio-overlayer">
@@ -697,10 +798,10 @@
  </div>
 </section> 
 <!----------------------------team-section------------------>
-<section class="team-section">
+<section class="team-section" id="scrollspy5">
  <div class="container">
   <div class="team-head-cnt text-center mt-3"> 
-   <h3 class="text-primary fw-normal rounded-pill bg-light">TEAM</h3>
+   <h3 class="text-primary fw-semibold rounded-pill bg-lgt opacity-75">TEAM</h3>
    <h1 class="fs-3 pt-3">Our Hardworking  <span class="text-primary">Team</span></h1>
    <p class="fw-semibold pt-3 pb-3 opacity-75">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est<br> adipisci expedita at voluptas atque vitae autem.</p>
   </div>
@@ -718,7 +819,7 @@
      </div> 
         <div class="card-body">
            <h3 class="fs-5 fw-semibold">Walter White</h3>
-           <p class="text-secondary fw-light">Chief Executive Officer</p>
+           <p class="text-secondary fw-semibold">Chief Executive Officer</p>
          </div>
         </div>
     </div>
@@ -780,7 +881,7 @@
 <section class="pricing-section">
  <div class="container">
   <div class="pricing-head-cnt text-center mt-3"> 
-   <h3 class="text-primary fw-normal rounded-pill bg-light">PRICING</h3>
+   <h3 class="text-primary fw-semibold rounded-pill bg-lgt opacity-75">PRICING</h3>
    <h1 class="fs-3 pt-3">Check our <span class="text-primary">Pricing</span></h1>
    <p class="fw-semibold pt-3 pb-3 opacity-75">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est<br> adipisci expedita at voluptas atque vitae autem.</p>
   </div>
@@ -844,9 +945,8 @@
        <div class="prc-card-head card-header fw-semibold opacity-75">
          Ultimate
        </div>
-      <span> 
-       <a href="#" class="pricing-side-btn btn btn-primary opacity-75">Advanced</a>
-      </span>
+
+       <p class="pricing-side-btn btn btn-primary opacity-75">Advanced</p>
 
      <div class="card-body">
        <h3 class="text-primary fs-1 fw-semibold"><sup class="fs-4 fw-semibold">$</sup>49<span class="text-secondary fs-6 opacity-75">/month</span></h3>
@@ -868,7 +968,7 @@
 <section class="FAQ-section">
  <div class="container">
   <div class="FAQ-head-cnt text-center"> 
-   <h3 class="text-primary fw-semibold rounded-pill bg-light">F.A.Q</h3>
+   <h3 class="text-primary fw-semibold rounded-pill bg-lgt opacity-75">F.A.Q</h3>
    <h1 class="fs-3 pt-2">Frequently Asked<span class="text-primary"> Questions</span></h1>
    <p class="fw-semibold pt-2 pb-3 opacity-75">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est<br> adipisci expedita at voluptas atque vitae autem.</p>
   </div>
@@ -950,10 +1050,10 @@
 </section>
 
 <!----------------contact-section------------------>
-<section class="contact-section">
+<section class="contact-section" id="scrollspy6">
  <div class="container">
   <div class="contact-head-cnt text-center"> 
-   <h3 class="text-primary fw-semibold rounded-pill bg-light">CONTACT</h3>
+   <h3 class="text-primary fw-semibold rounded-pill bg-lgt opacity-75">CONTACT</h3>
    <h1 class="fs-3 text-primary pt-2">Contact Us</h1>
    <p class="fw-semibold pt-2 pb-3 opacity-75">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est<br> adipisci expedita at voluptas atque vitae autem.</p>
   </div>
@@ -1110,5 +1210,14 @@
 
 </section>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+ let mbBtn = document.getElementById("mb-btn");
+		let mbMenu = document.getElementById("mb-menu");
+		mbBtn.addEventListener("click", function(){
+			mbMenu.classList.toggle("active");
+			document.getElementById("bar-icon").classList.toggle("active");
+			document.getElementById("close-icon").classList.toggle("active");
+		})
+</script> 
 </body>
 </html>

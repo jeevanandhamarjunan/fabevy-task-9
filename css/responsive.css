@@ -1,11 +1,71 @@
-@media (min-width:0){
+/* @media (max-width:576px){
+	.navbar-collapse{ 
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		background: #384e65eb;
+		padding: 76px 23px 25px 23px;
+		width: 100%;
+		transform:translateX(-100%);
+		transition:all .5s ease;
+		transition-delay:0.5s;
+		overflow:hidden;
+		
+	}
+	.navbar-collapse.active{
+		transform:translateX(0%);
+		transition-delay:0s;
+	}
+	
+	#mb-btn{
+		position: relative;
+		z-index: 1000;
+	}
+	#mb-btn span i{
+		display:none;
+	}
+	#mb-btn span #close-icon{
+		color:#fff;
+	}
+	#mb-btn span i.active{
+		display:inline;
+	}	
+	.navbar-nav{
+		 padding: 18px 38px;
+		 height:100%;
+		 background:white;
+		 line-height:30px;
+		transform:translateX(120%);
+		transition:all .5s ease;
+		transition-delay:0s;
+	}
+	.navbar-collapse.active .navbar-nav{
+		transform:translateX(0%);
+		transition-delay:0.5s;
+	}
+	.navbar-nav .btn{
+		width:100%;
+		margin-top:10px;
+	}
 
+} */
+@media (max-width:567px){
 .banner-logo{
    margin-bottom:15px;
    height:unset;
 }
+.banner-content h1{
+ font-size:34px !important;
+}
+.banner-content p{
+ font-size:17px !important;
+}
 .about-logo-1{
  margin:25px 0;
+}
+.abt-content{
+padding-top:20px;
 }
 .client-logo{
  padding:0;
@@ -14,8 +74,12 @@
 .card{
  margin:20px 0;
 }
-.pricing-side-btn {
- left:74%;
+.pricing-side-btn{
+    padding: 7px 35px;
+    top: 17px;
+}
+.testimonials-section {
+padding:207px 0;
 }
 .contact-address {
  margin:10px 0;
@@ -33,10 +97,52 @@
 .footer p{
  margin:0;
 }
+}
+@media (min-width: 567px) { 
+.banner-logo{
+   margin-bottom:15px;
+   height: 240px;
+}
+.about-logo-1{
+ margin:25px 0;
+}
+.abt-content{
+padding-top:20px;
+}
+.client-logo{
+ padding:0 50px;
+ margin:10px 0;
+}
+.card{
+ margin:20px 0;
+}
+.testimonials-section {
+padding:207px 0;
+}
+.contact-address {
+ margin:10px 0;
+}
+.bottom-content-1,.bottom-content-2,.bottom-content-3{
+  margin-bottom:24px;
+}
+.input-group{
+ width:100%;
+ left:0;
+}
+.footer{
+ text-align:center;
+}
+.footer p{
+ margin:0;
+}
+} 
+}
 @media (min-width: 768px) { 
+
 .banner-logo {
     margin:15px 0;
     font-size:15px;
+    height: unset;
 }
 .abt-content{
  margin-top:20px;
@@ -44,8 +150,17 @@
 .abt-main{
  margin:10px 0;
 }
+.about-logo-1{
+  margin:30px 0;
+}
 .abt-h{
  padding:0;
+}
+.card{
+  margin-bottom:28px;
+}
+.pricing-side-btn{
+    top: 18px;
 }
 .client-logo img{
  padding:0 40px;
@@ -53,38 +168,27 @@
 .service-logo{
   margin:10px 0;
 }
-.pricing-side-btn {
- left:71%;
-}
 }
 @media (min-width: 992px) {
 
 .banner-logo h3{
  font-size:16px !important;
 }
-.pricing-side-btn {
-    left: 165px;
-}
 .input-group{
     width: 50%;
     left: 27%;
     top: 17px;
 }
 .client-logo img {
-    padding: 0 20px;
+    padding: 0 28px;
 }
 }
 @media (min-width: 1200px) { 
 
-.pricing-side-btn {
-    left: 165px;
-}
 .input-group{
     width: 50%;
     left: 27%;
     top: 17px;
 }
-.client-logo img {
-    padding: 0 20px;
-}
+
 }
