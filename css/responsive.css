@@ -1,4 +1,4 @@
-/* @media (max-width:576px){
+@media(max-width:992px){
 	.navbar-collapse{ 
 		position: fixed;
 		top: 0;
@@ -49,7 +49,11 @@
 		margin-top:10px;
 	}
 
-} */
+        .navbar-expand-lg .navbar-nav .nav-link {
+          padding: 5px 0 5px 0;
+          display: inline-block;
+        }          
+}
 @media (max-width:567px){
 .banner-logo{
    margin-bottom:15px;
