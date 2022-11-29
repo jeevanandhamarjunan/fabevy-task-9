@@ -10,6 +10,9 @@
     padding:6px 0;
     background-color: #fff;
 }
+.nav-link:focus, .nav-link:hover {
+    color: #2196f3;
+}
 .nav-link .head-nav-link {
  padding-bottom:10px;
 }
