@@ -408,10 +408,12 @@ color: #646161;
 
 .team-overlayer {
     position: absolute;
-    top: 198px;
+    bottom:100px;
     text-align: center;
     width: 100%;
     opacity: 0;
+    transition:all ease 0.5s;
+
 }
 .team-overlayer a{
     display: inline-block;
@@ -427,7 +429,6 @@ color: #646161;
 .card:hover .team-overlayer{
  opacity:1;
  transform: translateY(10px);
- transition:all ease 0.5s;
 }
 .team-overlayer a:hover{
   background-color:#0d6efdb5;
